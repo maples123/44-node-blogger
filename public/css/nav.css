@@ -1,0 +1,71 @@
+{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:#eee;
+}
+/* 导航栏 */
+.fly-header{
+	height:60px;
+	background-color:#111;
+}
+.layui-container .layui-nav li{
+	float:left;
+}
+.layui-container .fly-nav-user{
+	float:right;
+}
+
+
+/* 副导航栏 */
+.fly-panel{
+	height:50px;
+	background-color:#fff;
+}
+.fly-panel .layui-clear{
+	float:left;
+}
+.fly-panel .layui-clear a{
+	display:inline-block;
+	width:65px;
+	line-height:50px;
+	margin:0 15px;
+	text-align:center;
+}
+.layui-container .layui-hide-sm{
+	display: block!important;;
+	float:right;
+	width:100px;
+	line-height:40px;
+	margin-top:5px;
+	background-color:#33ac9a;
+	font-size:15px;
+	text-align:center;
+	border-radius: 3px;
+}
+.layui-container .layui-hide-sm a{
+	color:#fff;
+}
+
+/* 登陆后的nav右边样式 */
+.lay-nav-child{
+	position: relative;
+	width:150px;
+}
+.lay-nav-child .nav-child{
+	position: absolute;
+	top:0;
+	right:0;
+	width:60px;
+	height:30px;
+	padding: 0;
+}
+.lay-nav-child .nav-child p a{
+	display:block;
+	width:30px;
+}
+/* 论文 */
+
+
+/* 公告 */

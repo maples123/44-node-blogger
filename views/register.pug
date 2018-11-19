@@ -1,0 +1,48 @@
+extends ./layout/layout
+
+block css
+	link(rel="stylesheet", href="/css/register.css")
+
+
+
+mixin userinfo
+	dl.dl-item
+		dt.dt-label 用户名
+		dd.dd-inline
+			input(type="text",name="username",required,lay-verify="required",placeholder="请输入用户名")
+	dl.dl-item
+		dt.dt-label 密码
+		dd.dd-inline
+			input(type="password",name="password",required,lay-verify="required",placeholder="请输入密码")
+
+block contents
+	.fly-panel-user
+		.fly-panel-pad
+			.layui-tab
+				ul.layui-tab-title
+					li(class=show? "" : "layui-this")
+						a(href="/user/login") 登路
+					li(class=show? "layui-this" : "")
+						a(href="/user/reg") 注册
+
+			//- 登录
+			.layui-form(class=show? "":"layui-show")
+				form(action="/user/login", method="post")
+					+userinfo
+					.layui-form-item
+						button.layui-btn 立即登陆
+
+			//- 注册
+			.layui-form(class=show? "layui-show":"")
+				form(action="/user/reg", method="POST")
+					+userinfo
+					dl.dl-item
+						dt.dt-label 确认密码
+						dd.dd-inline
+							input(type="password",name="passwords",required,lay-verify="required",placeholder="请再次输入密码")
+					.layui-form-item
+						button.layui-btn 注册
+					
+
+block scripts
+	script(src="/js/register.js")

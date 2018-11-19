@@ -1,0 +1,95 @@
+.fly-panel-user{
+	width:1170px;
+	height:500px;
+	margin:20px auto;
+	padding:20px;
+}
+.fly-panel-pad{
+	width:1130px;
+	height:460px;
+	background-color: #fff;
+}
+.fly-panel-pad .layui-tab{
+	width:100%;
+	height:50px;
+	border:1px solid #ccc;
+}
+.fly-panel-pad .layui-tab .layui-tab-title{
+	height:50px;
+}
+.fly-panel-pad .layui-tab .layui-tab-title li{
+	display:inline-block;
+	height:50px;
+}
+.fly-panel-pad .layui-tab .layui-tab-title li a{
+	display:block;
+	width:100px;
+	height:100%;
+	line-height:50px;
+	text-align:center;
+}
+.fly-panel-pad .layui-tab .layui-tab-title li.layui-this a{
+	border-bottom:1px solid #03967e;
+	color:#03967e;
+}
+
+.layui-form{
+	display:none;
+}
+.layui-show{
+	display:block;
+}
+form{
+	width:100%;
+	height:410px;
+	padding-top:20px;
+}
+form dl.dl-item{
+	height:40px;
+	margin-bottom:20px;
+	padding-left:20px;
+}
+form dl.dl-item dt.dt-label{
+	float:left;
+	width:110px;
+	height:100%;
+	line-height:40px;
+	border:1px solid #ccc;
+	border-right:none;
+	background-color:#fbfbfb;
+	text-align:center;
+}
+form dl.dl-item dd.dd-inline{
+	float:left;
+	width:200px;
+	height:100%;
+	border:1px solid #ccc;
+}
+form dl.dl-item dd.dd-inline input{
+	width:100%;
+	height:100%;
+	border:none;
+	outline:none;
+	text-indent:1em;
+}
+form .layui-form-item{
+	height:40px;
+	padding-left:20px;
+}
+form .layui-form-item button.layui-btn{
+	width:100px;
+	line-height:40px;
+	background-color:#069683;
+	text-align:center;
+	border:none;
+	outline:none;
+	cursor:pointer;
+}
+form .layui-form-item span{
+	display:inline-block;
+	line-height:40px;
+	text-indent:2em;
+}
+form .layui-form-item span:hover{
+	color:#069683;
+}

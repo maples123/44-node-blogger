@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		title 404
+		style(ref="stylesheet").
+			.text-center{
+				text-align: center;
+			}
+	body
+		h1(style="color:red;margin:60px 0 30px;").text-center 404
+		h2.text-center sorry! not found!!!
+
+		.text-center
+			span.time 3
+			|秒后返回首页
+
+block scripts
+	script.
+		const oTime = document.getElementsByClassName("time")[0]; 
+		let ti = 3;
+
+		const fn = function(){
+			oTime.innerHTML = --ti;
+			if(ti === 0){
+				location.href = "/";
+			}
+		}
+		setInterval(fn, 1000);
+
+	

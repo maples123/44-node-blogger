@@ -1,0 +1,39 @@
+.fly-header.layui-bg-black 
+	.layui-container 
+		ul.layui-nav
+			li.layui-nav-item
+				a(href="/") 首页
+			li.layui-nav-item
+				a(href="") Web
+			li.layui-nav-item
+				a(href="") 大数据
+			li.layui-nav-item
+				a(href="") MMP
+			li.layui-nav-item
+				a(href="") 社区
+			li.layui-nav-item
+				a(href="") Java
+			li.layui-nav-item
+				a(href="") Python
+			li.layui-nav-item
+				a(href="") 关于博主
+
+		
+		ul.layui-nav.fly-nav-user
+			if session && !session.isNew
+				li.layui-nav-item
+					a(href=session.role > 1 ? "/admin/user": "/admin/article") 个人中心
+					//- span.layui-badge-dot
+				li.layui-nav-item.lay-nav-child
+					a(href="")
+						//- 用户测试头像
+						img(src=session.avatar).layui-nav-img
+						span= session.username
+					.nav-child
+						p
+							a(href="/user/logout") 退了
+			else
+				li.layui-nav-item
+					a(href="/user/login") 登陆
+				li.layui-nav-item
+					a(href="/user/reg") 注册

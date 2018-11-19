@@ -1,0 +1,33 @@
+extends ./layout/layout
+
+
+block css
+	link(rel="stylesheet", href="/css/index.css")
+
+block contents
+	include ./layout/panel
+
+	.layui-container
+		.layui-row.layui-col-space15.fx
+			//- 文章列表
+			.layui-col-md8
+				ul.article-list
+					each info in artList
+						li.fx
+							a.list-face
+								img(src=info.author.avatar, alt=info.author)
+							h2
+								a.layui-badge= info.tips
+								a.articlt-title.ellipsis(href=`/article/${info._id}`)= info.title
+							.list-info.fx
+								a= info.author.username
+								span= info.created.toLocaleString()
+								span.list-reply
+									i(title="评论").layui-icon.layui-icon-file-b
+									= info.commentNum
+				#laypage(data-maxNum=maxNum)
+
+			include  ./layout/con-right
+
+block scripts
+	script(src="js/index.js")

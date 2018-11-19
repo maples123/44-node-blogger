@@ -1,0 +1,15 @@
+extends ./layout/layout
+
+block contents
+	h3(style="padding:20px 0px;text-align:center;color:red")= status
+	h4(style="text-align:center;") 即将跳转
+
+
+
+
+block scripts
+	script.
+		console.log("开始跳转");
+		setTimeout(() => {
+			location.href = "/";
+		},1000)

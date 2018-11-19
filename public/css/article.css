@@ -1,0 +1,43 @@
+.content .art-title{
+	line-height:60px;
+	font-size:50px;
+	text-align:center;
+}
+.other-info{
+	text-align:center;
+}
+.article-detail{
+	font-size:20px;
+}
+
+.comment{
+	padding-top:30px;
+}
+.comment .text-center{
+	height:0;
+	margin-bottom:40px;
+}
+.comment .text-center legend{
+	font-size:25px;
+	text-align:center;
+}
+.comment .txt .layui-btn{
+	margin-top:10px;
+}
+.comment-list li{
+	padding:10px 0;
+}
+.comment-list li img{
+	float:left;
+	width:50px;
+	height:50px;
+	margin-right:10px;
+}
+.comment-list li div.p p{
+	display:inline-block;
+	margin-right:10px;
+}
+.comment-list li .she-said{
+	margin-top:20px;
+
+}

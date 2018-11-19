@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+		title= title
+		meta(charset="utf-8")
+		link(rel="stylesheet", href="/css/nav.css")
+		link(rel="stylesheet", href="/layui/css/layui.css")
+
+		block css
+		script(src="/layui/layui.js")
+	body
+
+		//- nav
+		include ./nav.pug
+
+		//- content
+		block contents
+
+		//- footer
+		include ./footer.pug
+
+		//- script
+		block scripts

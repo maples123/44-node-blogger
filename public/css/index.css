@@ -1,0 +1,57 @@
+.fx:after{
+	content: "";
+	display:block;
+	clear: both;
+}
+.layui-container .layui-row{
+	width:1170px;
+	margin:20px auto 40px;
+}
+.layui-container .layui-row .layui-col-md8{
+	float:left;
+	width:800px;
+	background-color:#fff;
+}
+.layui-row .layui-col-md8 .article-list li{
+	padding:10px 0;
+	border-bottom:1px solid #ccc;
+}
+.layui-row .layui-col-md8 .article-list li > a{
+	float:left;
+	width:60px;
+	height:60px;
+
+}
+.layui-row .layui-col-md8 .article-list li > a img{
+	width:100%;
+	height:100%;
+}
+.layui-row .layui-col-md8 .article-list li h2 a{
+	margin-left:10px;
+}
+.article-list li .list-info{
+	padding-top:15px;
+}
+.article-list li .list-info a{
+	display:inline-block;
+	margin-left:10px;
+	margin-right:20px;
+}
+.article-list li .list-info span.list-reply{
+	float:right;
+	margin-right:40px;
+}
+#laypage{
+	text-align:center;
+}
+#laypage a{
+	cursor:pointer !important;
+}
+
+.con-right{
+	float:right;
+	width:280px;
+	height:160px;
+	padding:10px;
+	background-color:#fff;
+}
